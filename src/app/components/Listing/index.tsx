@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -53,12 +55,30 @@ const listingDetails = (data: any) => {
 };
 
 const Listing: React.FC<ListingProps> = ({ data }) => {
+  const router = useRouter();
+
+  const handleClick = (id: string) => {
+    router.push(`/pages/listing/${id}`);
+  };
   return (
     <>
-      <div className="mx-auto rounded-xl shadow-md md:max-w-2xl w-96 h-96 px-2 my-3">
+      <div
+        className="max-w-sm rounded-xl overflow-hidden shadow-lg px-2 my-3"
+        style={{ border: "solid 0.5px #80808045" }}
+      >
         <div style={{ fontSize: 24, paddingBottom: 16 }}>{data.title}</div>
         {awesomeSlider(data.media)}
         {listingDetails(data)}
+        <Link href={`/pages/listing/${data.id}`}>
+          {
+            <button
+              type="button"
+              className="text-gray-900 w-full bg-white border-2 border-gray-300 p-3 mt-1 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+            >
+              View Details
+            </button>
+          }
+        </Link>
       </div>
     </>
   );
