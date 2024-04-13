@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <div>
+      {Navbar()}
       <main className="container items-center justify-between flex flex-col">
         <div className="text-4xl">Welcome to LEASE IT</div>
         <div className="text-2xl">
@@ -12,7 +14,7 @@ export default function Home() {
       </main>
       <div className="container items-center justify-between flex flex-col">
         <Link href="/pages/listings">
-          {<button className="border-2 p-3 text-lg ">ViEW LISTINGS</button>}
+          {<button className="btn">ViEW LISTINGS</button>}
         </Link>
       </div>
     </div>

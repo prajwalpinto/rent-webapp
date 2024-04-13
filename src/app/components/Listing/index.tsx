@@ -14,7 +14,7 @@ interface ListingProps {
 
 const awesomeSlider = (media: any) => {
   return (
-    <AwesomeSlider>
+    <AwesomeSlider bullets={false}>
       {media.map((image: any) => (
         // eslint-disable-next-line react/jsx-key
         <div>
@@ -33,9 +33,7 @@ const awesomeSlider = (media: any) => {
 const listingDetails = (data: any) => {
   return (
     <>
-      <div style={{ paddingBottom: 16, fontSize: 24 }}>
-        <FontAwesomeIcon icon={fas.faDollarSign} /> {data.rent}
-      </div>
+      <div className="font-medium">{`$ ${data.rent}`}</div>
       <div
         className="flex-col"
         style={{ display: "flex", flexDirection: "row" }}
@@ -66,14 +64,15 @@ const Listing: React.FC<ListingProps> = ({ data }) => {
         className="max-w-sm rounded-xl overflow-hidden shadow-lg px-2 my-3"
         style={{ border: "solid 0.5px #80808045" }}
       >
-        <div style={{ fontSize: 24, paddingBottom: 16 }}>{data.title}</div>
         {awesomeSlider(data.media)}
+        <div className="h-18">{data.title}</div>
         {listingDetails(data)}
         <Link href={`/pages/listing/${data.id}`}>
           {
             <button
               type="button"
-              className="text-gray-900 w-full bg-white border-2 border-gray-300 p-3 mt-1 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+              className="btn w-full my-2 text-lg"
+              // className="text-gray-900 w-full bg-white border-2 border-gray-300 p-3 mt-1 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 rounded-lg me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
             >
               View Details
             </button>

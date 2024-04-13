@@ -17,11 +17,11 @@ export default function ListingDetail({ params }: { params: { id: string } }) {
   console.log(property);
   return (
     <div className="bg-gray-100 min-h-screen">
-      <div className="py-8">
-        <div className="max-w-4xl mx-auto">
+      <div className="py-7">
+        <div className="max-w-5xl mx-auto">
           <div className="bg-white shadow-md rounded-lg overflow-hidden">
             <img
-              className="w-full h-64 object-cover object-center"
+              className="w-full object-cover object-center"
               src={property.media[0].url}
               alt={property.title}
             />
@@ -42,7 +42,7 @@ export default function ListingDetail({ params }: { params: { id: string } }) {
                 </span>
                 <Link href={`/pages/apply/${property.id}`}>
                   {
-                    <button className="px-4 py-2 bg-white text-black rounded hover:bg-grey border-2 border-black">
+                    <button className="btn text-lg">
                       Submit Application Now
                     </button>
                   }
