@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "Fully Renovted ready to occupy",
+    "description": "Beautiful 3 bed house in a quiet neighbourhood",
     "available_on": "2024-05-01",
     "address": "1227 st margrets bay",
     "media": [
@@ -27,7 +28,7 @@
       }
     ],
     "unit_no": 1,
-    "google_location_data": { "latitude": 34.345345, "longitude": 76.999444 },
+    "location_data": { "latitude": 34.345345, "longitude": 76.999444 },
     "bed": 4,
     "bath": 1,
     "furnished": true,
@@ -47,6 +48,7 @@
   {
     "id": 2,
     "title": "Brand new 3 bed rental home",
+    "description": "Beautiful 3 bed house",
     "available_on": "2024-04-01",
     "address": "100 vincent st",
     "media": [
@@ -72,7 +74,7 @@
       }
     ],
     "unit_no": 1,
-    "google_location_data": { "latitude": 34.345345, "longitude": 76.999444 },
+    "location_data": { "latitude": 34.345345, "longitude": 76.999444 },
     "bed": 3,
     "bath": 2,
     "furnished": false,
@@ -92,6 +94,7 @@
   {
     "id": 3,
     "title": "Retro finish 1 bed suite",
+    "description": "Beautiful 1 bed suite in a quiet neighbourhood",
     "available_on": "2024-05-15",
     "address": "14 thunder bay",
     "media": [
@@ -117,7 +120,7 @@
       }
     ],
     "unit_no": 1,
-    "google_location_data": { "latitude": 34.345345, "longitude": 76.999444 },
+    "location_data": { "latitude": 34.345345, "longitude": 76.999444 },
     "bed": 1,
     "bath": 1,
     "furnished": true,
@@ -137,6 +140,7 @@
   {
     "id": 4,
     "title": "Old and beautiful 5 bed house",
+    "description": "Beautiful 5 bed house in a quiet neighbourhood",
     "available_on": "2024-05-31",
     "address": "14 glace bay",
     "media": [
@@ -162,7 +166,7 @@
       }
     ],
     "unit_no": 1,
-    "google_location_data": { "latitude": 34.345345, "longitude": 76.999444 },
+    "location_data": { "latitude": 34.345345, "longitude": 76.999444 },
     "bed": 5,
     "bath": 2.5,
     "furnished": true,
@@ -182,6 +186,7 @@
   {
     "id": 5,
     "title": "2 Bedroom house available to rent",
+    "description": "Beautiful 2 bed house in a quiet neighbourhood",
     "available_on": "2024-05-01",
     "address": "14 john terminator st",
     "media": [
@@ -207,7 +212,7 @@
       }
     ],
     "unit_no": 1,
-    "google_location_data": { "latitude": 34.345345, "longitude": 76.999444 },
+    "location_data": { "latitude": 34.345345, "longitude": 76.999444 },
     "bed": 2,
     "bath": 1,
     "furnished": true,
@@ -227,6 +232,7 @@
   {
     "id": 6,
     "title": "1 Bedroom basement apartment",
+    "description": "Beautiful 1 bed house in a quiet neighbourhood",
     "available_on": "2024-04-15",
     "address": "14 tamara dr",
     "media": [
@@ -252,7 +258,7 @@
       }
     ],
     "unit_no": 1,
-    "google_location_data": { "latitude": 34.345345, "longitude": 76.999444 },
+    "location_data": { "latitude": 34.345345, "longitude": 76.999444 },
     "bed": 1,
     "bath": 1,
     "furnished": true,
@@ -272,6 +278,7 @@
   {
     "id": 7,
     "title": "Prime location 3 bedroom house",
+    "description": "Beautiful 3 bed house in a quiet neighbourhood",
     "available_on": "2024-04-31",
     "address": "71 south St",
     "media": [
@@ -297,7 +304,7 @@
       }
     ],
     "unit_no": 1,
-    "google_location_data": { "latitude": 34.345345, "longitude": 76.999444 },
+    "location_data": { "latitude": 34.345345, "longitude": 76.999444 },
     "bed": 3,
     "bath": 2,
     "furnished": true,
@@ -317,6 +324,7 @@
   {
     "id": 8,
     "title": "Large Townhouse in heart of city",
+    "description": "Beautiful 3 bed townhouse house in a quiet neighbourhood",
     "available_on": "2024-06-01",
     "address": "1444 downtown ave",
     "media": [
@@ -342,7 +350,7 @@
       }
     ],
     "unit_no": 1,
-    "google_location_data": { "latitude": 34.345345, "longitude": 76.999444 },
+    "location_data": { "latitude": 34.345345, "longitude": 76.999444 },
     "bed": 4,
     "bath": 3,
     "furnished": true,
